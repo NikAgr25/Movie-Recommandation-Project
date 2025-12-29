@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 # Load .env file for API key
 # -----------------------------
 load_dotenv()
-OMDB_API_KEY = os.getenv("OMDB_API_KEY")
+OMDB_API_KEY = st.secrets("OMDB_API_KEY")
 
 # -----------------------------
 # Streamlit Page Config
